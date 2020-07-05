@@ -1,0 +1,197 @@
+.top__color {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 91, 83) 0%,
+    rgb(235, 82, 82) 18.23%,
+    rgb(247, 143, 47) 34.37%,
+    rgb(244, 193, 81) 48.96%,
+    rgb(82, 187, 118) 66.15%,
+    rgb(38, 165, 215) 82.29%,
+    rgb(224, 105, 183) 100%
+  );
+}
+.header {
+  height: 70px;
+  background: $paper;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  box-shadow: 0 1px 13px -4px $darkGrey;
+  &__logo {
+    img {
+      width: 130px;
+    }
+  }
+
+  .menuBackground {
+    margin: 0 spacing(3) 0 spacing(2);
+    .dropDownMenu {
+      li {
+        position: relative;
+        a {
+          padding: spacing(1) spacing(2);
+          text-decoration: none;
+          @include Text($textPrimary, $subtitle, $fwRegular);
+        }
+        a:hover {
+          background: $lightGrey;
+        }
+      }
+
+      > li {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+      }
+      > li:first-child {
+        margin-left: 0;
+      }
+      > li {
+        
+        > ul {
+          box-shadow: 0 4px 16px $darkGrey;
+          text-align: left;
+          width: 300px;
+          background: $paper;
+          top: 200%;
+          left: 0;
+          z-index: 9999999;
+          padding: spacing(1) spacing(0);
+          position:absolute;
+         &:before {
+          border-top: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 15px solid #00F;
+          border-left: 15px solid transparent;
+          width: 0; height:0;
+          content: '';
+          }
+        
+          a {
+            position: relative;
+            padding: spacing(0) 0 spacing(0.5) spacing(1);
+            display: block;
+            text-decoration: none;
+            @include Text($textPrimary, $subtitle, $fwRegular);
+
+            &:before {
+              font-family: Material Icons;
+              content: "\e912";
+              font-size: 20px;
+              position: relative;
+              top: 5px;
+              margin-right: spacing(2);
+            }
+            &:after {
+              font-family: Material Icons;
+              content: "\e5cc";
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          > li {
+            > ul {
+              text-align: left;
+              background: #e7b400;
+              position: absolute;
+              left: 100%;
+              top: 0;
+              z-index: 9999999;
+            }
+          }
+          > li:hover > ul {
+            display: block;
+          }
+        }
+      }
+      > li:hover > ul {
+        display: block;
+      }
+    }
+    .dropDownMenu,
+    .dropDownMenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__search {
+    position: relative;
+    flex-grow: 1; //dư nhiêu lấy hết
+    margin: 0 20px;
+    input {
+      width: 100%;
+      border-radius: 2px;
+      padding: spacing(1) spacing(1);
+      padding-left: spacing(1);
+      border: none;
+      outline: none; //Bỏ đường màu xanh khi nhấn vào
+      background: $light;
+      &::placeholder {
+        @include Text($textGrey, $body2, $fwRegular);
+        letter-spacing: 0.5px;
+      }
+    }
+    input:focus {
+      background-color: $paper;
+      border: 1px solid $lightDark;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: $textRedOrange;
+      font-size: $subtitle;
+    }
+  }
+  &__nav {
+    a {
+      @include Text($textGrey, $subtitle, $fwRegular);
+      padding: 13.5px 30px;
+      text-decoration: none;
+      font-size: $body2;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid transparent;
+      margin-right: spacing(1);
+      &:hover {
+        //parent selector
+        color: $textSecondary;
+        border: 1px solid $darkGrey;
+        outline: none;
+      }
+    }
+  }
+  &__btn-login {
+    @include Button($paper, 1px solid $lightGrey, spacing(0.8) spacing(3), 5px);
+    @include Text($textSecondary, $subtitle, $fwBold);
+  }
+
+  &__btn-signup {
+    @include Button(
+      $secondary,
+      1px solid $secondary,
+      spacing(0.8) spacing(3),
+      5px
+    );
+    margin-left: 10px;
+    @include Text($textWhite, $subtitle, $fwBold);
+  }
+  @media screen and(max-width:576px) {
+    height: 170px;
+
+    &__logo {
+      img {
+        width: 190px;
+      }
+    }
+  }
+}

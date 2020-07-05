@@ -1,0 +1,212 @@
+.top__color {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%);
+}
+
+.header {
+  height: 70px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  box-shadow: 0 1px 13px -4px #f2f3f5;
+}
+
+.header__logo img {
+  width: 130px;
+}
+
+.header .menuBackground {
+  margin: 0 30px 0 20px;
+}
+
+.header .menuBackground .dropDownMenu li {
+  position: relative;
+}
+
+.header .menuBackground .dropDownMenu li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #29303b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header .menuBackground .dropDownMenu li a:hover {
+  background: #F3F3F3;
+}
+
+.header .menuBackground .dropDownMenu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+  /* solve the 4 pixels spacing between list-items */
+}
+
+.header .menuBackground .dropDownMenu > li:first-child {
+  margin-left: 0;
+}
+
+.header .menuBackground .dropDownMenu > li > ul {
+  box-shadow: 0 4px 16px #f2f3f5;
+  text-align: left;
+  width: 300px;
+  background: #ffffff;
+  top: 200%;
+  left: 0;
+  z-index: 9999999;
+  padding: 10px 0px;
+  position: absolute;
+}
+
+.header .menuBackground .dropDownMenu > li > ul:before {
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #00F;
+  border-left: 15px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+.header .menuBackground .dropDownMenu > li > ul a {
+  position: relative;
+  padding: 0px 0 5px 10px;
+  display: block;
+  text-decoration: none;
+  color: #29303b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header .menuBackground .dropDownMenu > li > ul a:before {
+  font-family: Material Icons;
+  content: "\e912";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul a:after {
+  font-family: Material Icons;
+  content: "\e5cc";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .menuBackground .dropDownMenu > li > ul > li > ul {
+  text-align: left;
+  background: #e7b400;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 9999999;
+}
+
+.header .menuBackground .dropDownMenu > li > ul > li:hover > ul {
+  display: block;
+}
+
+.header .menuBackground .dropDownMenu > li:hover > ul {
+  display: block;
+}
+
+.header .menuBackground .dropDownMenu,
+.header .menuBackground .dropDownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__search {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.header__search input {
+  width: 100%;
+  border-radius: 2px;
+  padding: 10px 10px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: #fbfbf7;
+}
+
+.header__search input::placeholder {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.header__search input:focus {
+  background-color: #ffffff;
+  border: 1px solid #dedfe0;
+}
+
+.header__search i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ec5252;
+  font-size: 14px;
+}
+
+.header__nav a {
+  color: #686f7a;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 13.5px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+}
+
+.header__nav a:hover {
+  color: #0f7c90;
+  border: 1px solid #f2f3f5;
+  outline: none;
+}
+
+.header__btn-login {
+  background: #ffffff;
+  border: 1px solid #F3F3F3;
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: #0f7c90;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header__btn-signup {
+  background: #0f7c90;
+  border: 1px solid #0f7c90;
+  padding: 8px 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 170px;
+  }
+  .header__logo img {
+    width: 190px;
+  }
+}
+/*# sourceMappingURL=home.css.map */
