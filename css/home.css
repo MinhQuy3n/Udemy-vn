@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 .top__color {
   width: 100%;
   height: 8px;
@@ -50,25 +51,98 @@
 }
 
 .header .menuBackground .dropDownMenu > li > ul {
-  box-shadow: 0 4px 16px #f2f3f5;
+  box-shadow: -16px -14px 11px -6px #f2f3f5;
   text-align: left;
-  width: 300px;
+  width: 250px;
   background: #ffffff;
-  top: 200%;
+  top: 170%;
   left: 0;
   z-index: 9999999;
   padding: 10px 0px;
   position: absolute;
+  display: none;
 }
 
 .header .menuBackground .dropDownMenu > li > ul:before {
-  border-top: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid #00F;
-  border-left: 15px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #000;
+  border-left: 10px solid transparent;
+  position: relative;
+  top: -45px;
+  left: 13px;
+  border-color: transparent transparent #ffffff transparent;
   width: 0;
   height: 0;
   content: '';
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__webdev {
+  margin-top: -30px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__webdev:before {
+  font-family: Material Icons;
+  content: "\e912";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__business:before {
+  font-family: Material Icons;
+  content: "\e0af";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__finance:before {
+  font-family: Material Icons;
+  content: "\e850";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__itsoftware:before {
+  font-family: Material Icons;
+  content: "\e30c";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__office:before {
+  font-family: Material Icons;
+  content: "\e85d";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__personal:before {
+  font-family: Material Icons;
+  content: "\e867";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
+.header .menuBackground .dropDownMenu > li > ul .header__design:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+  content: "\f044";
+  font-size: 18px;
 }
 
 .header .menuBackground .dropDownMenu > li > ul a {
@@ -79,15 +153,6 @@
   color: #29303b;
   font-size: 14px;
   font-weight: 400;
-}
-
-.header .menuBackground .dropDownMenu > li > ul a:before {
-  font-family: Material Icons;
-  content: "\e912";
-  font-size: 20px;
-  position: relative;
-  top: 5px;
-  margin-right: 20px;
 }
 
 .header .menuBackground .dropDownMenu > li > ul a:after {
@@ -101,11 +166,17 @@
 
 .header .menuBackground .dropDownMenu > li > ul > li > ul {
   text-align: left;
-  background: #e7b400;
+  background: #F2F3F5;
   position: absolute;
   left: 100%;
   top: 0;
   z-index: 9999999;
+  width: 200px;
+  display: none;
+}
+
+.header .menuBackground .dropDownMenu > li > ul > li > ul a:before {
+  content: "";
 }
 
 .header .menuBackground .dropDownMenu > li > ul > li:hover > ul {
@@ -191,8 +262,8 @@
 }
 
 .header__btn-signup {
-  background: #0f7c90;
-  border: 1px solid #0f7c90;
+  background: #F2F3F5;
+  border: 1px solid #F2F3F5;
   padding: 8px 30px;
   border-radius: 5px;
   margin-left: 10px;
@@ -208,5 +279,169 @@
   .header__logo img {
     width: 190px;
   }
+}
+
+.main__content {
+  width: 100%;
+  background: url(../../img/a9a63915-1546-4ac1-92fd-4284e91a37ef.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.main__content .main__content--text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+}
+
+.main__content .main__content--text p:first-child {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(41, 48, 59, 0.55);
+}
+
+.main__content .main__content--text p:nth-child(2) {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 300;
+  text-shadow: 0 2px 4px rgba(41, 48, 59, 0.55);
+}
+
+.main__content .main__content--text .content__input {
+  position: relative;
+  display: inline;
+}
+
+.main__content .main__content--text .content__input input {
+  outline: none;
+  width: 500px;
+  border: 1px solid transparent;
+  padding: 13px 17px;
+  border-radius: 3px;
+}
+
+.main__content .main__content--text .content__input input::placeholder {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.main__content .main__content--text .content__input i {
+  color: #ec5252;
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  height: 52px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 2;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.main__content .main__content--text .content__input i:hover {
+  color: #ffffff;
+  background: #ec5252;
+  z-index: 1;
+}
+
+.new__channel .how__udemy__work {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+}
+
+.new__channel .how__udemy__work .work__item:first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new__channel .how__udemy__work .work__item:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new__channel .how__udemy__work .work__item:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.new__channel .how__udemy__work .work__item {
+  color: #ffffff;
+  width: 33.333%;
+  padding: 20px 2%;
+  letter-spacing: 1px;
+}
+
+.new__channel .how__udemy__work .work__item p {
+  margin: 0;
+}
+
+.new__channel .how__udemy__work .work__item p:first-child {
+  font-size: 17px;
+  padding: 0;
+}
+
+.new__channel .how__udemy__work .work__item p:last-child {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.new__channel .how__udemy__work .work__item .item__icon i {
+  font-size: 44px;
+  padding-right: 20px;
+}
+
+.new__channel .browse__container {
+  padding: 30px 1%;
+}
+
+.new__channel .browse__container .browse__skills__hub {
+  display: flex;
+}
+
+.new__channel .browse__container .browse__skills__hub .escription__unit {
+  width: 35%;
+  margin: 15px 15px 28px 0;
+  padding: 0 32px;
+}
+
+.new__channel .browse__container .browse__skills__hub .skill__hubs_unit {
+  width: 65%;
+}
+
+.new__channel .browse__container .browse__skills__hub .skill__hubs__unit .nav-tabs .nav-link {
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 4fwLight;
+  color: #29303b;
+  border: none;
+}
+
+.new__channel .browse__container .browse__skills__hub .skill__hubs__unit .nav-tabs .active {
+  border-bottom: 7px solid #007791;
+}
+
+.new__channel .skill__hubs__unit .tab-content .item {
+  width: 200px;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--img {
+  height: 100px;
+  width: 100%;
+  background: url(../img/unit_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /*# sourceMappingURL=home.css.map */

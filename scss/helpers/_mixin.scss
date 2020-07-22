@@ -11,3 +11,9 @@
   font-weight: $fw;
   
 }
+@mixin Input($width, $border,$padding, $borderRadius){
+  width: $width;
+  border: $border;
+  padding: $padding;
+  border-radius: $borderRadius;
+}

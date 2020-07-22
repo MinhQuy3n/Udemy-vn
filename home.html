@@ -8,6 +8,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,7 +24,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -29,53 +43,294 @@
     <div class="top__color"></div>
     <header class="header">
       <a href="#" class="header__logo">
-        <img src="./img/logo-coral.svg">
+        <img src="./img/logo-coral.svg" />
       </a>
-
 
       <div class="menuBackground">
         <ul class="dropDownMenu">
-
           <li>
-            <a href="#"><span> <i class="fa fa-th"></i> Catergories</span>
-          </a>
+            <a href="#"
+              ><span> <i class="fa fa-th"></i> Catergories</span>
+            </a>
             <ul>
-              <li><a href="#">Developement</a></li>
+              <li><a href="#" class="header__webdev">Developement</a></li>
               <li>
-                <a href="#">WordPress</a>
+                <a href="#" class="header__business">Business</a>
                 <ul>
                   <li><a href="#">Hacks</a></li>
                   <li><a href="#">Plugins</a></li>
                   <li><a href="#">Shortcodes</a></li>
                 </ul>
               </li>
-              <li><a href="#">PHP</a></li>
-              <li><a href="#">jQuery</a></li>
+              <li>
+                <a href="#" class="header__finance">Finance & Accounting</a>
+                <ul>
+                  <li><a href="#">Hacks</a></li>
+                  <li><a href="#">Plugins</a></li>
+                  <li><a href="#">Shortcodes</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="header__itsoftware">IT & Software</a></li>
+              <li>
+                <a href="#" class="header__office">Office Productivity</a>
+              </li>
+              <li>
+                <a href="#" class="header__personal">Personal Developement</a>
+              </li>
+              <li><a href="#" class="header__design">Design</a></li>
             </ul>
           </li>
         </ul>
       </div>
 
-      
       <div class="header__search">
-        <input type="text" placeholder="Search for anything">
+        <input type="text" placeholder="Search for anything" />
         <i class="fa fa-search"></i>
       </div>
       <nav class="header__nav">
-      <a href="#" >Udemy for Bussiness</a>
-      <a href="#" >Teach on udemy</a>
+        <a href="#">Udemy for Bussiness</a>
+        <a href="#">Teach on udemy</a>
       </nav>
       <button class="header__btn-login">Log in</button>
       <button class="header__btn-signup">Sign Up</button>
-
     </header>
-
-
-    
-
+    <section class="main__content">
+      <div class="main__content--text">
+        <p>Lear more for less</p>
+        <p>Today is the last day to get courses from $10.99</p>
+        <div class="content__input">
+          <input type="text" placeholder="What do you want to learn?" />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </section>
+    <!--MAIN CONTENT-->
+    <section class="new__channel">
+      <div class="how__udemy__work">
+        <div class="work__item">
+          <span class="item__icon">
+            <i class="fi fi-history"></i>
+          </span>
+          <div class="items">
+            <p>100,000 online courses</p>
+            <p>Explore a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="work__item">
+          <span class="item__icon">
+            <i class="fi fi-history"></i>
+          </span>
+          <div class="items">
+            <p>Expert instruction</p>
+            <p>Find the right instructor for you</p>
+          </div>
+        </div>
+        <div class="work__item">
+          <span class="item__icon">
+            <i class="fi fi-history"> </i>
+          </span>
+          <div class="items">
+            <p>Lifetime access</p>
+            <p>Learn on your schedule</p>
+          </div>
+        </div>
+      </div>
+      <div class="browse__container">
+        <div class="browse__skills__hub">
+          <div class="escription__unit">
+            <h4>The world’s largest selection of courses</h4>
+            <p>
+              Choose from over 100,000 online video courses with new additions
+              published every month
+            </p>
+          </div>
+          <div class="skill__hubs__unit">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-item nav-link active"
+                  id="nav-home-tab"
+                  data-toggle="tab"
+                  href="#bussiness"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                  >Bussiness</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-profile-tab"
+                  data-toggle="tab"
+                  href="#design"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                  >Design</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#photography"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >Photography</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#developement"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >Developement</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#marketing"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >Marketing</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#itsoftware"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >IT & Software</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#personaldev"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >Personal Developement</a
+                >
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="bussiness"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="unit__item">
+                      <div class="unit__item--img"></div>
+                      <div class="unit__item__detail">
+                        <h1>Neuroplasticity: How To Us Your Brain</h1>
+                        <p>Gregory Caremans</p>
+                        <div class="rate">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <p>4.6</p>
+                          <span> (9,709)</span>
+                        </div>
+                        <div class="price">
+                          <p>$149.99</p>
+                          <p>$22.99</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="item"><h4>2</h4></div>
+                  <div class="item"><h4>3</h4></div>
+                  <div class="item"><h4>4</h4></div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="design"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                design
+              </div>
+              <div
+                class="tab-pane fade"
+                id="photography"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                photography
+              </div>
+              <div
+                class="tab-pane fade"
+                id="developement"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                Developement
+              </div>
+              <div
+                class="tab-pane fade"
+                id="marketing"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                Marketing
+              </div>
+              <div
+                class="tab-pane fade"
+                id="itsoftware"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                itsoftware
+              </div>
+              <div
+                class="tab-pane fade"
+                id="personaldev"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                personaldev
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          // loop: true,
+          margin: 200,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -91,5 +346,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
   </body>
 </html>

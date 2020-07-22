@@ -1,0 +1,19 @@
+.new__channel{
+    .skill__hubs__unit{
+        .tab-content{
+            .item{
+                width:200px;
+            }
+            .unit__item{
+                &--img{
+                    height:100px;
+                    width:100%;
+                    background:url(../img/unit_1.jpg);
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    background-position:center center;
+                }
+            }
+        }
+    }
+}

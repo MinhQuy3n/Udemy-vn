@@ -1,0 +1,22 @@
+.new__channel {
+    .browse__container{
+        .browse__skills__hub{
+            .skill__hubs__unit{
+                .nav-tabs{
+                    .nav-link{
+                        padding:spacing(1) spacing(1);
+                        font-size: $subtitle;
+                        font-weight: 4fwLight;
+                        color: $textPrimary;
+                        border:none;
+                    }
+                    
+                    .active{
+                        border-bottom:7px solid #007791;
+                    }
+                }
+                
+            }
+        }
+    }
+}

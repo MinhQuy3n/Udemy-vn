@@ -1,0 +1,42 @@
+.new__channel {
+  .how__udemy__work {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+    .work__item:first-child {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .work__item:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .work__item:nth-child(2) {
+      display: flex;
+      justify-content:center;
+    }
+    .work__item {
+      color: $textWhite;
+      width: 33.333%;
+      padding: spacing(2) 2%;
+      letter-spacing: 1px;
+      p {
+        margin: 0;
+      }
+      p:first-child {
+        font-size: $h6 + 1px;
+        padding: 0;
+      }
+      p:last-child {
+        font-size: $subtitle + 1px;
+        font-weight: $fwLight;
+      }
+      .item__icon {
+        i {
+          font-size: $h1;
+          padding-right: spacing(2);
+        }
+      }
+    }
+  }
+}
