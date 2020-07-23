@@ -4,12 +4,12 @@
         .browse__skills__hub{
             display:flex;
             .escription__unit{
-                width:35%;
+                width:35% !important;
                 margin: spacing(1.5) spacing(1.5) spacing(2.8) 0;
                 padding: 0 spacing(3.2);
             }
-            .skill__hubs_unit{
-                width:65%;
+            .skill__hubs__unit{
+                width:65% !important;
             }
         }
     }

@@ -411,19 +411,19 @@
 }
 
 .new__channel .browse__container .browse__skills__hub .escription__unit {
-  width: 35%;
+  width: 35% !important;
   margin: 15px 15px 28px 0;
   padding: 0 32px;
 }
 
-.new__channel .browse__container .browse__skills__hub .skill__hubs_unit {
-  width: 65%;
+.new__channel .browse__container .browse__skills__hub .skill__hubs__unit {
+  width: 65% !important;
 }
 
 .new__channel .browse__container .browse__skills__hub .skill__hubs__unit .nav-tabs .nav-link {
   padding: 10px 10px;
   font-size: 14px;
-  font-weight: 4fwLight;
+  font-weight: 300;
   color: #29303b;
   border: none;
 }
@@ -432,16 +432,63 @@
   border-bottom: 7px solid #007791;
 }
 
-.new__channel .skill__hubs__unit .tab-content .item {
-  width: 200px;
-}
-
 .new__channel .skill__hubs__unit .tab-content .unit__item--img {
   height: 100px;
   width: 100%;
-  background: url(../img/unit_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--img img {
+  height: 100px;
+  width: 100%;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail p {
+  font-size: 12px;
+  color: #686f7a;
+  margin: 0;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .rate {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .rate i {
+  color: #eb8a2f;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .rate p {
+  font-size: 16px;
+  color: #ec5252;
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .rate span {
+  font-size: 12px;
+  color: #686f7a;
+  font-weight: 300;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .price {
+  display: flex;
+  align-items: center;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .price p:first-child {
+  font-size: 16px;
+  color: #29303b;
+  margin-right: 10px;
+}
+
+.new__channel .skill__hubs__unit .tab-content .unit__item--detail .price p:last-child {
+  font-size: 14px;
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=home.css.map */

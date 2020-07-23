@@ -1,19 +1,59 @@
-.new__channel{
-    .skill__hubs__unit{
-        .tab-content{
-            .item{
-                width:200px;
+.new__channel {
+  .skill__hubs__unit {
+    .tab-content {
+      .unit__item {
+        &--img {
+          height: 100px;
+          width: 100%;
+          img{
+            height: 100px;
+            width: 100%;
+          }
+        }
+        &--detail{
+            h1{
+                font-size:20px;
+                margin:0;
             }
-            .unit__item{
-                &--img{
-                    height:100px;
-                    width:100%;
-                    background:url(../img/unit_1.jpg);
-                    background-repeat: no-repeat;
-                    background-size:cover;
-                    background-position:center center;
+            p{
+                font-size: $body2;
+                color:$textGrey;
+                margin:0;
+            }
+            .rate{
+                display:flex;
+                align-items: center;
+                margin:spacing(.5) 0;
+                i{
+                    color: $textOrangeStar;
+                }
+                p{
+                    font-size:$h6;
+                    color: $textRedOrange;
+                    font-weight: $fwBold;
+                    margin : 0 spacing(.5);
+                }
+                span{
+                    font-size:$body2;
+                    color: $textGrey;
+                    font-weight: $fwLight;
+                }
+            }
+            .price{
+                display:flex;
+                align-items: center;
+                p:first-child{
+                    font-size:$h6;
+                    color: $textPrimary;
+                    margin-right:spacing(1);
+                }
+                p:last-child{
+                    font-size:$subtitle;
+                    text-decoration: line-through;
                 }
             }
         }
+      }
     }
+  }
 }
