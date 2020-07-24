@@ -1,0 +1,30 @@
+.userstory{
+    padding: spacing(6.4) spacing(2.4) ;
+    border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+    .userstory__container{
+        display:flex;
+        justify-content:space-around;
+        .userstory__video{
+            width:50%;
+            display:flex;
+            justify-content:flex-end;
+        }
+        .userstory__text{
+            width:40%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                font-size:$h3 +2px;
+                font-weight: $fwBold;
+            }
+            p{
+                font-size:$h5+1px;
+                max-width:400px;
+                font-weight:$fwRegular;
+            }
+        }
+
+    }
+}
