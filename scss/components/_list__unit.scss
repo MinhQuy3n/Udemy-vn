@@ -1,16 +1,18 @@
-.new__channel {
-  .skill__hubs__unit {
-    .tab-content {
-      .unit__item {
-        &--img {
-          height: 100px;
-          width: 100%;
-          img{
-            height: 100px;
-            width: 100%;
-          }
+.list__unit{
+    padding:30px 5%;
+    h1{
+        font-size:$h4+4px;
+        margin-bottom: spacing(1.6);
+    }
+    &__items{
+        width:243px;
+        .list__unit--img{
+            width:100%;
+            i{
+                width:100%;
+            }
         }
-        &--detail{
+        .list__unit--detail{
             h1{
                 font-size:$h4;
                 margin:0;
@@ -53,7 +55,25 @@
                 }
             }
         }
-      }
+        .bestseller{
+            @include Button($bestSeller,none,spacing(.4) spacing(.8),4px);
+            font-size:$body2;
+            font-weight: $fwBold;
+            color: $textBestSeller;
+        }
+        .hightrate{
+            font-size:$body2;
+            color: $textHightRate;
+            font-weight: $fwBold;
+            @include Button($hightRate,none,spacing(.4) spacing(.8),4px);
+
+        }
     }
-  }
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        top:30%;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        right:-20px;
+    }
 }

@@ -1,0 +1,40 @@
+.component {
+  padding: spacing(2.4) 0;
+  border-top: 1px solid #dcdacb;
+  border-bottom: 1px solid #dcdacb;
+  .containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5% !important;
+    .component__item {
+      display: flex;
+    }
+    .item__icon {
+      margin-right: spacing(1.6);
+      i {
+        font-size: $h5;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: red;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        color: $textSecondary;
+        background: #f2fbfc;
+      }
+    }
+    .items {
+      max-width: 250px;
+      p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: $fwLight;
+      }
+      p:first-child {
+        font-weight: $fwBold;
+      }
+    }
+  }
+}
