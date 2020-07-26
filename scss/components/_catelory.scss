@@ -28,4 +28,20 @@
         }
     }
   }
+  @media screen and(max-width: 600px){
+    .catelory__item{
+      width:auto;
+      border: 1px solid $blue;
+      border-radius: 9999px;
+
+      img{display:none;
+      }
+      
+      h1{
+        font-size:$subtitle;
+        padding:15px;
+        color:$textSecondary;
+      }
+    }
+  }
 }

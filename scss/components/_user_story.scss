@@ -3,8 +3,7 @@
     border-top: 1px solid $border;
   border-bottom: 1px solid $border;
     .userstory__container{
-        display:flex;
-        justify-content:space-around;
+        
         .userstory__video{
             width:50%;
             display:flex;
@@ -26,5 +25,27 @@
             }
         }
 
+    }
+    @media screen and(min-width:769px){
+        .userstory__container{
+            display:flex;
+        justify-content:space-around;
+        }
+    }
+    @media screen and(max-width:768px){
+        .userstory__container{
+            .userstory__video{
+                width:100%;
+                iframe{
+                    width:100%;
+                }
+            }
+            .userstory__text{
+                width:100%;
+                p{
+                    max-width:100%;
+                }
+            }
+        }
     }
 }

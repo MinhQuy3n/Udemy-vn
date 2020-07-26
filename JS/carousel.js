@@ -3,17 +3,30 @@ $(document).ready(function () {
       loop: false,
       margin: 10,
       nav: true,
-      responsive: {
-        0: {
-          items: 1,
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+            items : 1,
+          
         },
-        600: {
-          items: 3,
+        // breakpoint from 480 up
+        480 : {
+          items : 2,
+
+            
         },
-        1000: {
+        // breakpoint from 768 up
+        768 : {
+          items : 4, 
+        },
+        992: {
+          items: 4,
+        },
+        1200:{
           items: 5,
-        },
-      },
+        }
+    }
+    
     });
   });
   

@@ -2,7 +2,6 @@
     .browse__container{
         padding: spacing(3) 1%;
         .browse__skills__hub{
-            display:flex;
             .escription__unit{
                 width:35% !important;
                 margin: spacing(1.5) spacing(1.5) spacing(2.8) 0;
@@ -10,6 +9,26 @@
             }
             .skill__hubs__unit{
                 width:65% !important;
+            }
+        }
+    }
+    @media screen and(min-width:993px){
+        .browse__container{
+            .browse__skills__hub{
+                display:flex;
+
+            }
+        }
+    }
+    @media screen and(max-width:992px){
+        .browse__container{
+            .browse__skills__hub{
+                .escription__unit{
+                    width:100% !important;
+                }
+                .skill__hubs__unit{
+                    width:100% !important;
+                }
             }
         }
     }

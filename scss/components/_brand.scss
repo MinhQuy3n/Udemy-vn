@@ -34,4 +34,13 @@
       }
     }
   }
+  @media screen and(max-width:992px){
+    .brand__container{
+      a{
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+      }
+    }
+  }
 }

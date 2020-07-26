@@ -5,11 +5,13 @@
     background-position: center center;
     background-size:cover;
     height:500px;
+    z-index:-1;
     position: relative;
     .main__content--text{
-        position:absolute;
+        display:inline;
+        position: absolute;
         top:50%;
-        left:5%;
+        left:10%;
         transform: translate(-5% , -50%);
         p:first-child{
             font-size:$h2;
@@ -58,6 +60,11 @@
                 background: #ec5252;
                 z-index:1;
             }
+        }
+    }
+    @media screen and(max-width:576px){
+        .main__content--text{
+            display:none;
         }
     }
 }

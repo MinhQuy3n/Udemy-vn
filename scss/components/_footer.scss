@@ -1,8 +1,6 @@
 .footer {
   padding: spacing(2) 4%;
   .link_and_locale {
-    display: flex;
-    justify-content: flex-start;
     position: relative;
     ul {
       padding: 0;
@@ -50,6 +48,23 @@
       p {
         color: $textGrey;
         font-size: $body2;
+      }
+    }
+  }
+  @media screen and(min-width:701px){
+    .link_and_locale {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and(max-width:992px){
+    .link_and_locale {
+      
+      ul{
+        margin-right: spacing(1);
+      }
+      .language{
+        top:0;
       }
     }
   }
